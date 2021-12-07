@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my project">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Makho kukhianidze">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dog and cat age</title>
+    <link rel="icon" href="icons/m.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-box">
+            <div class="one-box">
+                <img src="image/2.gif" alt="dog-picture">
+                <div class="centered">
+                    <p id="dogAge"></p>
+                    <p id="aboutDog"></p>
+                </div>
+            </div>
+            <div class="two-box">
+                <h1>How Old Is Your Dog In Human Years?</h1>
+                <div class="input-style">
+                    <label for="userName">His/Her name:</label>
+                </div>
+                <input type="text" id="userName" name="text" required />
+                <div class="input-style">
+                    <label for="age">Human age:</label>
+                </div>
+                <input type="number" id="age" name="number" required />
+                <div class="input-style">
+                    <input type="button" class="button" value="calculate" onclick="dog_age()" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main-box">
+            <div class="two-box">
+                <h1>How Old Is Your Cat In Human Years?</h1>
+                <div class="input-style">
+                    <label for="catName">His/Her name:</label>
+                </div>
+                <input type="text" id="catName" name="text" required />
+                <div class="input-style">
+                    <label for="ages">Human age:</label>
+                </div>
+                <input type="number" id="ages" name="number" required />
+                <div class="input-style">
+                    <input type="button" class="button" value="calculate" onclick="cat_age()" />
+                </div>
+            </div>
+            <div class="one-box">
+                <img src="image/1.gif" alt="dog-picture">
+                <div class="centered">
+                    <p id="catAge"></p>
+                    <p id="aboutCat"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
